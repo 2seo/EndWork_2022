@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+* {
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box; 
+}
+ul, ol, li {
+          list-style: none; 
+}
+figure {
+          width: 100%;
+          height: 100vh;
+          overflow: hidden;
+          position: relative;
+          background: #ffc0cb; 
+}
+figure p {
+          position: absolute;
+          top: 7vh;
+          left: 4vw;
+          font-size: 20px;
+          font-family: "arial";
+          color: #fff;
+          line-height: 1.4;
+          letter-spacing: 1px;
+          text-decoration: none;
+}
+figure button {
+          width: 75px;
+          height: 26px;
+          position: relative;
+          z-index: 20;
+          top: 7vh;
+          left: 3.5vw;
+          font-size: 20px;
+          font-family: "arial";
+          opacity: 0;
+          line-height: 1.4;
+          letter-spacing: 1px;
+          text-decoration: none;
+          cursor: pointer;
+}
+figure section {
+          width: 500px;
+          height: 300px;
+          position: relative;
+          left: 50%;
+          top: 25%;
+          margin-top: 50px;
+          margin-left: -250px;
+          border-radius: 7px;
+}
+figure section img {
+          width: 50px;
+          height: 46px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-top: -23px;
+          margin-left: -25px;
+          filter: blur(2px);
+          opacity: 1;
+}
+.heart {
+          width: 50px;
+          height: 46px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-top: -23px;
+          margin-left: -25px;
+          filter: blur(2px);
+          animation: 4000ms pulse forwards infinite ease-in-out ;
+          opacity: 0;
+}
+.heart1 {
+          width: 50px;
+          height: 46px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-top: -23px;
+          margin-left: -25px;
+          filter: blur(2px);
+          animation: 4000ms pulse 1s forwards infinite ease-in-out ;
+          opacity: 0;
+}
+.heart2 {
+          width: 50px;
+          height: 46px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-top: -23px;
+          margin-left: -25px;
+          filter: blur(2px);
+          animation: 4000ms pulse 2s forwards infinite ease-in-out ;
+          opacity: 0;
+}
+.heart3 {
+          width: 50px;
+          height: 46px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-top: -23px;
+          margin-left: -25px;
+          filter: blur(2px);
+          animation: 4000ms pulse 3s forwards infinite ease-in-out;
+          opacity: 0;
+}
+@keyframes pulse {
+          0%{
+                    transform: scale(1);
+                    opacity: 1;
+          }
+          100% {
+                    transform: scale(15);
+                    opacity: 0;
+          }
+}
